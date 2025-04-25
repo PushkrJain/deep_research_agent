@@ -18,19 +18,19 @@ This project was developed and tested on Kali Linux. The following software is r
 - A bash-compatible shell (e.g., Bash, Zsh)
 
 ## Directory Structure
-
+```plain
 deep-research-agent/
 ├── research_agent/
-│ ├── init.py
-│ ├── research.py # Research agent for web crawling and data collection
-│ ├── draft.py # Draft agent for report generation
-│ ├── visualize.py # Visualization agent for reliability charts
-│ └── export.py # Export agent for saving reports
-├── app.py # Main application script
-├── requirements.txt # Project dependencies
-├── LICENSE # License file
-└── README.md # Project documentation
-
+│   ├── __init__.py
+│   ├── research.py        # Research agent for web crawling and data collection
+│   ├── draft.py          # Draft agent for report generation
+│   ├── visualize.py      # Visualization agent for reliability charts
+│   └── export.py         # Export agent for saving reports
+├── app.py                # Main application script
+├── requirements.txt      # Project dependencies
+├── LICENSE               # License file
+└── README.md             # Project documentation
+```
 
 ## Setup Instructions
 Follow these steps to set up and run the Deep Research Agent on your Kali Linux system.
