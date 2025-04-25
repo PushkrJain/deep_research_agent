@@ -38,40 +38,22 @@ Follow these steps to set up and run the Deep Research Agent on your Kali Linux 
 git clone https://github.com/your-username/deep-research-agent.git
 cd deep-research-agent
 
-2. Install Dependencies
-
+### 2. Install Dependencies
 Ensure Python 3.8+ and pip are installed. Then, install the required Python packages listed in requirements.txt:
-bash
-
+```bash
 pip install -r requirements.txt
 
-The requirements.txt includes:
 
-langchain
-langgraph
-openai
-matplotlib
-python-docx
-markdown2
-google-generativeai
-langchain-google-genai
-seaborn
-
-3. Obtain API Keys
-
+### 3. Obtain API Keys
 The project requires two API keys:
-
 Tavily API Key:
-
     Sign up at Tavily to obtain an API key.
-
     The key is used for web search and data collection.
 
 Google Gemini API Key:
-
     Get your API key from Google AI Studio.
-
     The key is used for the Gemini model in LangChain for report generation.
+
 
 4. Set Environment Variables
 
