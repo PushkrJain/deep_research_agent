@@ -22,7 +22,7 @@ This project was developed and tested on Kali Linux. The following software is r
 deep-research-agent/
 ├── research_agent/
 │   ├── __init__.py
-│   ├── research.py        # Research agent for web crawling and data collection
+│   ├── research_agent.py        # Research agent for web crawling and data collection
 │   ├── draft.py          # Draft agent for report generation
 │   ├── visualize.py      # Visualization agent for reliability charts
 │   └── export.py         # Export agent for saving reports
