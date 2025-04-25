@@ -1,8 +1,9 @@
-langgraph==0.0.33
-tavily-python==0.3.3
-langchain-google-genai==0.0.13
-langchain-core==0.1.0
-python-docx==1.1.0
-matplotlib==3.8.4
-seaborn==0.13.2
-typing-extensions==4.11.0
+langchain
+langgraph
+openai
+matplotlib
+python-docx
+markdown2
+google-generativeai
+langchain-google-genai
+seaborn
