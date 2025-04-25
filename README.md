@@ -132,7 +132,7 @@ Enter your research question: What is the impact of AI on healthcare?
   Check your internet connection and ensure the query is specific enough. The system logs errors to `research.log` for debugging.
 
 ### License
-This project is licensed under the MIT License. See the [LICENSE]() file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ### Acknowledgments
 - Built with LangChain and LangScale for agent orchestration.
