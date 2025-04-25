@@ -1,196 +1,150 @@
-# 🤖 Deep Research Agent
+# Deep Research Agent  
 
-**Deep Research Agent** is an advanced AI-powered research system designed to perform comprehensive online information gathering and professional-grade report generation. It uses a multi-agent architecture built with **LangChain** and **LangGraph**, integrating:
+## Project Description  
+Deep Research Agent is an advanced AI-powered research system designed to perform comprehensive online information gathering and report generation. The system leverages a multi-agent architecture built with LangChain and LangGraph frameworks, integrating the Tavily API for web crawling and the Google Gemini API for natural language processing. The system consists of:  
 
-- 🌐 **Tavily API** – for powerful web crawling and data extraction  
-- ✨ **Google Gemini API** – for natural language processing and response generation
+- **Research Agent**: Collects and structures data from web sources using Tavily's advanced search capabilities.  
+- **Draft Agent**: Generates detailed, well-structured research reports in markdown format.  
+- **Visualization Agent**: Creates visual representations of source reliability using Matplotlib and Seaborn.  
+- **Export Agent**: Saves reports in various formats, including Word documents with embedded visualizations.  
 
----
+The system is designed to handle complex research queries, correct spelling errors (e.g., "travily" to "tavily"), and produce professional-grade reports with source citations and reliability visualizations.  
 
-## 🧠 System Overview
+## System Requirements  
+This project was developed and tested on Kali Linux. The following software is required:  
 
-The system is structured into modular agents:
+- Python 3.10 or higher  
+- pip (Python package manager)  
+- A bash-compatible shell (e.g., Bash (recommended), Zsh)  
 
-- **🔍 Research Agent:** Collects and structures data using Tavily’s advanced search.
-- **📝 Draft Agent:** Generates detailed, markdown-formatted research reports.
-- **📊 Visualization Agent:** Creates charts visualizing source reliability using Matplotlib and Seaborn.
-- **📁 Export Agent:** Converts reports to Word documents with embedded visualizations.
+## Directory Structure  
+deep-research-agent/
+├── research_agent/
+│ ├── init.py
+│ ├── research.py # Research agent for web crawling and data collection
+│ ├── draft.py # Draft agent for report generation
+│ ├── visualize.py # Visualization agent for reliability charts
+│ └── export.py # Export agent for saving reports
+├── app.py # Main application script
+├── requirements.txt # Project dependencies
+├── LICENSE # License file
+└── README.md # Project documentation
 
-It handles spelling corrections (e.g., “travily” → “tavily”), citation generation, and reliable source tagging.
+## Setup Instructions  
+Follow these steps to set up and run the Deep Research Agent on your Kali Linux system.  
 
----
-
-## 🖥️ System Requirements
-
-- **Operating System:** Tested on Kali Linux
-- **Python:** 3.8 or higher
-- **Shell:** Bash-compatible (e.g., Bash, Zsh)
-- **Package Manager:** pip
-
----
-
-## 📁 Directory Structure
-
-deep-research-agent/ ├── research_agent/ │ ├── init.py │ ├── research.py # Research Agent │ ├── draft.py # Draft Agent │ ├── visualize.py # Visualization Agent │ └── export.py # Export Agent ├── app.py # Main interface script ├── requirements.txt # Dependencies ├── LICENSE └── README.md
-
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the Repository
-
+### 1. Clone the Repository  
 ```bash
 git clone https://github.com/your-username/deep-research-agent.git
 cd deep-research-agent
 
 2. Install Dependencies
 
-Ensure Python 3.8+ and pip are installed, then run:
+Ensure Python 3.8+ and pip are installed. Then, install the required Python packages listed in requirements.txt:
+bash
 
 pip install -r requirements.txt
 
-requirements.txt includes:
+The requirements.txt includes:
 
-    langchain
-
-    langgraph
-
-    openai
-
-    matplotlib
-
-    python-docx
-
-    markdown2
-
-    google-generativeai
-
-    langchain-google-genai
-
-    seaborn
+langchain
+langgraph
+openai
+matplotlib
+python-docx
+markdown2
+google-generativeai
+langchain-google-genai
+seaborn
 
 3. Obtain API Keys
-Tavily API Key
 
-    Sign up at Tavily and obtain your API key.
+The project requires two API keys:
 
-    Used for web search and data collection.
+Tavily API Key:
 
-Google Gemini API Key
+    Sign up at Tavily to obtain an API key.
+
+    The key is used for web search and data collection.
+
+Google Gemini API Key:
 
     Get your API key from Google AI Studio.
 
-    Used for generating responses using the Gemini model.
+    The key is used for the Gemini model in LangChain for report generation.
 
 4. Set Environment Variables
 
-Add the following to your ~/.bashrc or ~/.zshrc:
+Set the API keys as environment variables in your bash shell. Add the following lines to your ~/.bashrc or ~/.zshrc:
+bash
 
 export TAVILY_API_KEY="your-tavily-api-key"
 export GOOGLE_API_KEY="your-google-api-key"
 
-Apply changes:
+Apply the changes:
+bash
 
-source ~/.bashrc   # or source ~/.zshrc
+source ~/.bashrc  # or source ~/.zshrc
 
-Or for current session only:
+Alternatively, set the variables for the current session only:
+bash
 
 export TAVILY_API_KEY="your-tavily-api-key"
 export GOOGLE_API_KEY="your-google-api-key"
 
 5. Run the Application
 
+Start the interactive research interface:
+bash
+
 python app.py
 
-The system will:
+The system will prompt you to enter a research question. Type your query, and the system will:
 
-    Collect data via Tavily
+    Perform web research using the Research Agent.
 
-    Generate a reliability chart
+    Generate a reliability visualization using the Visualization Agent.
 
-    Draft a report in Markdown
+    Draft a comprehensive report using the Draft Agent.
 
-    Export it as a Word document with visuals
+    Save the report as a Word document with embedded visualizations using the Export Agent.
 
-To exit: type exit or quit
-📂 Output
+To exit, type exit or quit.
+6. Output
 
-    Saved to: ./research_outputs/
+Reports and visualizations are saved in the ./research_outputs directory, with filenames including timestamps (e.g., report_20250425_123456.docx, reliability_20250425_123456.png). Error logs are saved to research.log.
 
-    Formats: .docx with timestamped filenames (e.g., report_20250425_123456.docx)
 
-    Visual charts: reliability_20250425_123456.png
+Troubleshooting
 
-    Logs: research.log for errors/debugging
+API Key Errors:
 
-🚀 Usage Example
+    Ensure TAVILY_API_KEY and GOOGLE_API_KEY are set correctly.
 
-$ python app.py
+    Check with echo $TAVILY_API_KEY and echo $GOOGLE_API_KEY.
 
-🔍 Research Assistant (type 'exit' to quit)
------------------------------------------
-Note: Both exact queries and common variations will be searched
------------------------------------------
+Dependency Issues:
 
-Enter your research question: What is the impact of AI on healthcare?
-🔄 Processing your request...
+    Verify all packages are installed (pip list).
 
-============================================================
-📝 Research Question: What is the impact of AI on healthcare?
-🔎 Findings:
-[Generated report content...]
-📄 Report saved to: ./research_outputs/report_20250425_123456.docx
-🔗 Sources used: 5
-📊 Reliability visualization included
-============================================================
+    Update pip if needed (pip install --upgrade pip).
 
-🛠️ Troubleshooting
+No Results:
 
-    API Key Errors:
-    Check with echo $TAVILY_API_KEY and echo $GOOGLE_API_KEY
+    Check your internet connection.
 
-    Dependencies Missing:
-    Ensure packages are installed: pip list
-    Update pip: pip install --upgrade pip
+    Ensure the query is specific enough.
 
-    No Results Found:
+    The system logs errors to research.log for debugging.
 
-        Check your internet connection
 
-        Try making your query more specific
-
-        Check research.log for debugging details
-
-🤝 Contributing
-
-Contributions are welcome!
-
-    Fork the repo
-
-    Create a feature branch:
-
-git checkout -b feature/your-feature
-
-Commit your changes:
-
-git commit -m "Add your feature"
-
-Push the branch:
-
-    git push origin feature/your-feature
-
-    Open a Pull Request
-
-📜 License
+License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-🙏 Acknowledgments
+Acknowledgments
 
-    Built with LangChain and LangGraph for agent orchestration
+    Built with LangChain and LangScale for agent orchestration.
 
-    Powered by Tavily for intelligent search
+    Powered by Tavily for web search and Google Gemini for language modeling.
 
-    Enhanced by Google Gemini for natural language generation
-
-    Visualized using Matplotlib and Seaborn
+    Visualizations created using Matplotlib and Seaborn.
