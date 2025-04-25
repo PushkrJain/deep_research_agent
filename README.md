@@ -91,12 +91,17 @@ Type `exit` to quit.
 ### 6. Output
 Reports and visualizations are saved in the `./research_outputs` directory, with filenames including timestamps (e.g., `report_20250425_123456.docx`, `reliability_20250425_123456.png`). Error logs are saved to `research.log`.
 
-Usage Example
+**Usage Example**
 
 ![Image](https://github.com/user-attachments/assets/24dae013-5cfd-4682-8038-d40741381e37)
 
+![Image](https://github.com/user-attachments/assets/62ed144e-510d-420f-acb2-ec509e26c2ef)
 
+**Generated Report Preview**
 
+![Screenshot From 2025-04-25 19-35-59](https://github.com/user-attachments/assets/2aa6a6cd-d4a0-4b7b-85a4-2957cc62fbeb)
+
+![Screenshot From 2025-04-25 19-36-33](https://github.com/user-attachments/assets/6a565102-aa17-4932-a94e-c83be4ae31e6)
 
 ### Troubleshooting
 - **API Key Errors:**
