@@ -86,7 +86,7 @@ The system will prompt you to enter a research question. Type your query, and th
 - Draft a comprehensive report using the Draft Agent.
 - Save the report as a Word document with embedded visualizations using the Export Agent.
 
-To exit, type `exit`.
+Type `exit` to quit.
 
 ### 6. Output
 Reports and visualizations are saved in the `./research_outputs` directory, with filenames including timestamps (e.g., `report_20250425_123456.docx`, `reliability_20250425_123456.png`). Error logs are saved to `research.log`.
