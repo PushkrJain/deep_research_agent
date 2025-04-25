@@ -19,7 +19,7 @@ This project was developed and tested on Kali Linux. The following software is r
 
 ## Directory Structure
 ```plain
-deep-research-agent/
+deep_research_agent/
 ├── research/
 │   ├── __init__.py
 │   ├── research_agent.py        # Research agent for web crawling and data collection
@@ -37,7 +37,7 @@ Follow these steps to set up and run the Deep Research Agent on your Kali Linux 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/PushkrJain/deep-research-agent.git
+git clone https://github.com/PushkrJain/deep_research_agent.git
 cd deep-research-agent
 ```
 
