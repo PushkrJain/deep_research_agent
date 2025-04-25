@@ -37,7 +37,7 @@ Follow these steps to set up and run the Deep Research Agent on your Kali Linux 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/deep-research-agent.git
+git clone https://github.com/PushkrJain/deep-research-agent.git
 cd deep-research-agent
 ```
 
