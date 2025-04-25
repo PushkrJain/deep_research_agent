@@ -6,10 +6,10 @@ import datetime
 import logging
 from typing import TypedDict, List, Optional, Dict, Any
 from langgraph.graph import StateGraph, END
-from research_agent_1 import ResearchAgent
-from draft_agent_1 import DraftAgent
-from visualize_1 import VisualizationAgent
-from export_1 import Exporter
+from research_agent import ResearchAgent
+from draft_agent import DraftAgent
+from visualize import VisualizationAgent
+from export import Exporter
 
 # Configure logging
 logging.basicConfig(
