@@ -37,9 +37,3 @@ Follow these steps to set up and run the Deep Research Agent on your Kali Linux 
 ```bash
 git clone https://github.com/your-username/deep-research-agent.git
 cd deep-research-agent
-
-    Built with LangChain and LangScale for agent orchestration.
-
-    Powered by Tavily for web search and Google Gemini for language modeling.
-
-    Visualizations created using Matplotlib and Seaborn.
