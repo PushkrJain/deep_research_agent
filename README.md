@@ -42,7 +42,7 @@ cd deep-research-agent
 ```
 
 ### 2. Install Dependencies
-Ensure Python 3.8+ and pip are installed. Then, install the required Python packages listed in requirements.txt:
+Ensure Python 3.10+ and pip are installed. Then, install the required Python packages listed in requirements.txt:
 ```bash
 pip install -r requirements.txt
 ```
@@ -50,14 +50,14 @@ pip install -r requirements.txt
 ### 3. Obtain API Keys
 The project requires two API keys:
 - Tavily API Key:
-    - Sign up at Tavily to obtain an API key.
+    - Sign up at [Tavily](https://app.tavily.com/home) to obtain an API key.
     - The key is used for web search and data collection.
 - Google Gemini API Key:
-    - Get your API key from Google AI Studio.
+    - Get your API key from [Google AI Studio](https://aistudio.google.com/apikey).
     - The key is used for the Gemini model in LangChain for report generation.
 
 ### 4. Set Environment Variables
-Set the API keys as environment variables in your bash shell. Add the following lines to your ~/.bashrc or ~/.zshrc:
+Set the API keys as environment variables in your bash shell. Add the following lines to your `~/.bashrc` or `~/.zshrc`:
 ```bash
 export TAVILY_API_KEY="your-tavily-api-key"
 export GOOGLE_API_KEY="your-google-api-key"
@@ -86,10 +86,10 @@ The system will prompt you to enter a research question. Type your query, and th
 - Draft a comprehensive report using the Draft Agent.
 - Save the report as a Word document with embedded visualizations using the Export Agent.
 
-To exit, type exit.
+To exit, type `exit`.
 
 ### 6. Output
-Reports and visualizations are saved in the ./research_outputs directory, with filenames including timestamps (e.g., report_20250425_123456.docx, reliability_20250425_123456.png). Error logs are saved to research.log.
+Reports and visualizations are saved in the `./research_outputs` directory, with filenames including timestamps (e.g., `report_20250425_123456.docx`, `reliability_20250425_123456.png`). Error logs are saved to `research.log`.
 Usage Example
 bash
 
@@ -113,7 +113,7 @@ Enter your research question: What is the impact of AI on healthcare?
 
 ### Troubleshooting
 - **API Key Errors:**
-  Ensure TAVILY_API_KEY and GOOGLE_API_KEY are set correctly. Check with
+  Ensure `TAVILY_API_KEY` and `GOOGLE_API_KEY` are set correctly. Check with
   
   ```bash
   echo $TAVILY_API_KEY
@@ -129,10 +129,10 @@ Enter your research question: What is the impact of AI on healthcare?
   pip install --upgrade pip
   ```
 - **No Results:**
-  Check your internet connection and ensure the query is specific enough. The system logs errors to research.log for debugging.
+  Check your internet connection and ensure the query is specific enough. The system logs errors to `research.log` for debugging.
 
 ### License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE]() file for details.
 
 ### Acknowledgments
 - Built with LangChain and LangScale for agent orchestration.
