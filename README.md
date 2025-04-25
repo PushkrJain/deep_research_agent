@@ -20,7 +20,7 @@ This project was developed and tested on Kali Linux. The following software is r
 ## Directory Structure
 ```plain
 deep-research-agent/
-├── research_agent/
+├── research/
 │   ├── __init__.py
 │   ├── research_agent.py        # Research agent for web crawling and data collection
 │   ├── draft.py          # Draft agent for report generation
