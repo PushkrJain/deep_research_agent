@@ -90,26 +90,13 @@ Type `exit` to quit.
 
 ### 6. Output
 Reports and visualizations are saved in the `./research_outputs` directory, with filenames including timestamps (e.g., `report_20250425_123456.docx`, `reliability_20250425_123456.png`). Error logs are saved to `research.log`.
+
 Usage Example
-bash
 
-$ python app.py
-🔍 Research Assistant (type 'exit' to quit)
------------------------------------------
-Note: Both exact queries and common variations will be searched
------------------------------------------
+![Image](https://github.com/user-attachments/assets/24dae013-5cfd-4682-8038-d40741381e37)
 
-Enter your research question: What is the impact of AI on healthcare?
-🔄 Processing your request...
 
-============================================================
-📝 Research Question: What is the impact of AI on healthcare?
-🔎 Findings:
-[Generated report content...]
-📄 Report saved to: ./research_outputs/report_20250425_123456.docx
-🔗 Sources used: 5
-📊 Reliability visualization included
-============================================================
+
 
 ### Troubleshooting
 - **API Key Errors:**
