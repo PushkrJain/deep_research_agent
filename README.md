@@ -8,7 +8,7 @@ Deep Research Agent is an advanced AI-powered research system designed to perfor
 - **Visualization Agent**: Creates visual representations of source reliability using Matplotlib and Seaborn.
 - **Export Agent**: Saves reports in various formats, including Word documents with embedded visualizations.
 
-The system is designed to handle complex research queries, correct spelling errors (e.g., "travily" to "tavily"), and produce professional-grade reports with source citations and reliability visualizations.
+The system is designed to handle complex research queries, and produce professional-grade reports with source citations and reliability visualizations.
 
 ## System Requirements
 This project was developed and tested on Kali Linux. The following software is required:
